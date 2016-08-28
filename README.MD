@@ -11,6 +11,14 @@ eg.
 
 The mobile web console logger library helps you debug mobile web pages. If you only have Windows, and you want to quickly check the console on an iOS device, or you are using OSX and you want to check an Android device, you can simply add this library to your webpage.
 
+## Installation
+
+npm install mobile-web-console-logger --save
+
+## NPM
+
+https://www.npmjs.com/package/mobile-web-console-logger
+
 ## Benefits
 
 * Debug web pages on Android and iOS devices without any setup
