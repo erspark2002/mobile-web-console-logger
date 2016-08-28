@@ -1,0 +1,27 @@
+{
+  "name": "mobile-web-console-logger",
+  "description": "Debug mobile web applications by redirecting console.log() output to a div at the bottom of the page, avoiding the need for usb cables or driver installation.",
+  "main": "lib/mobileWebConsoleLogger.js",
+  "authors": [
+    "Robin Spark"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "debug",
+    "mobile",
+    "onscreen",
+    "web",
+    "applications",
+    "console.log",
+    "usb",
+    "driver"
+  ],
+  "homepage": "https://github.com/erspark2002/mobile-web-console-logger",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

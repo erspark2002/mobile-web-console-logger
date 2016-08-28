@@ -13,7 +13,9 @@ The mobile web console logger library helps you debug mobile web pages. If you o
 
 ## Installation
 
-npm install mobile-web-console-logger --save
+`$ npm install mobile-web-console-logger --save`
+
+`$ bower install mobile-web-console-logger --save`
 
 ## NPM
 
