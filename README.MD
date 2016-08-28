@@ -13,7 +13,7 @@ The mobile web console logger library helps you debug mobile web pages. If you o
 
 ## Benefits
 
-* Debug Android and iOS web pages without any setup
+* Debug web pages on Android and iOS devices without any setup
 * No usb cables
 * No drivers to install
 * Logs:
@@ -33,3 +33,7 @@ The mobile web console logger library helps you debug mobile web pages. If you o
 ## Demo
 
 [Click here for a demo.](https://erspark2002.github.io/mobile-web-console-logger/)
+
+## Dependencies
+
+* jQuery is currently used to build the dynamic list of logging statements.

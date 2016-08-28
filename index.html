@@ -31,7 +31,7 @@
 
 		<script type="text/javascript" src="mobileWebConsoleLogger.js"></script>
 		<script type="text/javascript">
-			$(function(){
+			function init() {
 				$('#btn').on('click', function() {
 
 					var myObj = {};
@@ -76,7 +76,12 @@
 					// processing stops here
 					thisIsNotAFunction();
 				});
+			}
+
+			document.addEventListener("DOMContentLoaded", function(event) { 
+				init();
 			});
+
 		</script>
 	</body>
 </html>
