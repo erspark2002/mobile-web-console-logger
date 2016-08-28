@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>REACT - List of Examples</title>
+		<title>mobile web console logger</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css">
@@ -33,6 +33,7 @@
 		<script type="text/javascript">
 			$(function(){
 				$('#btn').on('click', function() {
+
 					var myObj = {};
 
 					var ReferenceError = function() {
@@ -44,6 +45,7 @@
 					console.warn('This is a warning message');
 					console.error('This is an error message');
 					console.debug('This is a debug message');
+					console.log('');
 					
 					//NaN
 					var total = 0/0;
@@ -58,9 +60,6 @@
 					console.log('#undefined value:', myObj.nonExistantProperty);
 					console.log('#multiple values:', 1,2,3,'a','b','c');
 					console.log('#multiple values:', 1,'a',null,undefined,'');
-
-					// // console.log('');
-					// console.log('-->thisIsNotAFunction');
 
 					try {
 						thisIsNotAFunction();

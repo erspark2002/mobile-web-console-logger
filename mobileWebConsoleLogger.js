@@ -1,37 +1,3 @@
-var lastError = {};
-
-function jsonCensor(key, value) {
-  if (value == Infinity) {
-    return "Infinity";
-  }
-  return value;
-}
-
-// Convert js objects to their string representation
-function _toString(obj) {
-  if (obj == Infinity) {
-    return "Infinity";
-  } else if (obj == NaN) {
-    return "NaN";
-  } else if (typeof obj === "undefined") {
-	// undefined needs to be checked before null, because checking if an undefined value is null returns true.
-    return "undefined";
-  } else if (obj == null) {
-    return "null";
-  } else if (typeof obj === String && obj.length === 0) {
-    return "<empty string>";
-  }
-  return obj;
-}
-
-function getObjectValues(obj) {
-	var arr = [];
-	for(var key in obj) {
-		arr.push(_toString(obj[key]));
-	}
-	return arr;	
-}
-
 window.onerror = function(message, url, lineNumber) {  
 	var message = arguments[0];
 	var url = arguments[1];
@@ -42,6 +8,31 @@ window.onerror = function(message, url, lineNumber) {
 	debugLog('ERROR', err);
 	return true;
 }; 
+
+// Convert js objects to their string representation
+function _toString(obj) {
+	if (obj == Infinity) {
+		return "Infinity";
+	} else if (obj == NaN) {
+		return "NaN";
+	} else if (typeof obj === 'string' && obj.length === 0) {
+		return "&lt;empty string&gt;";
+	} else if (typeof obj === "undefined") {
+		// undefined needs to be checked before null, because checking if an undefined value is null returns true.
+		return "undefined";
+	} else if (obj == null) {
+		return "null";
+	}
+	return obj;
+}
+
+function getObjectValues(obj) {
+	var arr = [];
+	for(var key in obj) {
+		arr.push(_toString(obj[key]));
+	}
+	return arr;	
+}
 
 function debugLog(level, args) {
 	var msg = '';
