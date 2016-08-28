@@ -37,3 +37,7 @@ The mobile web console logger library helps you debug mobile web pages. If you o
 ## Dependencies
 
 * jQuery is currently used to build the dynamic list of logging statements.
+
+## Server-side Logging
+
+* As the library captures all console error logging and page errors as text, it could be forked to send this information to the server via ajax.
